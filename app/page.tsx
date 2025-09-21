@@ -116,14 +116,17 @@ export default function Home(): JSX.Element {
               </motion.a>
             ))}
 
-            <button
-              onClick={toggleTheme}
-              className="ml-2 p-2 rounded-full ring-1 ring-white/10 hover:scale-105 transition-transform"
-              aria-label="Toggle color mode"
-              title="Toggle color mode"
-            >
-              {isDark ? <Sun size={18} /> : <Moon size={18} />}
-            </button>
+            {/* 
+              <button
+                onClick={toggleTheme}
+                className="ml-2 p-2 rounded-full ring-1 ring-white/10 hover:scale-105 transition-transform"
+                aria-label="Toggle color mode"
+                title="Toggle color mode"
+              >
+                {isDark ? <Sun size={18} /> : <Moon size={18} />}
+              </button>
+            */}
+            
           </nav>
 
           {/* Mobile: menu + theme toggle */}
@@ -187,10 +190,8 @@ export default function Home(): JSX.Element {
           aria-hidden="true"
         />
 
-        {/* dark overlay to improve contrast */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/30 dark:from-black/60 dark:to-black/70" />
 
-        {/* Glass card */}
         <motion.section
           className="relative z-20 max-w-4xl mx-6 w-full rounded-3xl p-10 backdrop-blur-3xl bg-white/12 dark:bg-black/40 border border-white/10 dark:border-white/6 shadow-2xl"
           variants={containerVariants}
