@@ -288,17 +288,17 @@ export default function Home(): JSX.Element {
               {
                 title: "First Meeting",
                 desc: "Get familiar with the club and learn what we do.",
-                date: "2025-09-26",
+                date: "2025-09-27",
               },
               {
                 title: "Workshop",
                 desc: "Learn how to code in your respective fields.",
-                date: "2025-10-03",
+                date: "2025-10-04",
               },
               {
                 title: "Workshop",
                 desc: "Learn how to code in your respective fields.",
-                date: "2025-10-10",
+                date: "2025-10-11",
               },
             ].map(
               (
